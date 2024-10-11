@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glassmorphism Login with Animated Background</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* Button styling for login buttons */
+    .toggleButton {
+      background: rgba(255, 235, 59, 0.2); /* Light yellow with transparency */
+      color: #ffeb3b; /* Yellow text color */
+      border: 1px solid rgba(255, 235, 59, 0.4); /* Border to match the glass effect */
+      padding: 10px 20px;
+      border-radius: 20px; /* Rounded corners */
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s; /* Smooth hover transition */
+      backdrop-filter: blur(10px); /* Glassmorphism effect */
+      font-weight: 600;
+      margin: 5px; /* Spacing between buttons */
+    }
+
+    .toggleButton:hover {
+      background: rgba(255, 235, 59, 0.6); /* Brighten background on hover */
+      color: #000; /* Dark text color for contrast */
+      transform: scale(1.05); /* Slightly enlarge the button on hover */
+      border-color: rgba(255, 235, 59, 0.8); /* Make the border more prominent */
+    }
+
+    .toggleButton:focus {
+      outline: none; /* Remove default outline on focus */
+      box-shadow: 0 0 10px rgba(255, 235, 59, 0.8); /* Add a glow effect on focus */
+    }
+
+    .signin .glass .inputBox input[type="text"],
+    .signin .glass .inputBox input[type="password"] {
+      cursor: text; /* Change cursor to text (I-beam) when hovering over the textboxes */
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <div class="animated-bg">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    
+    <div class="signin">
+      <div class="glass" id="loginCard">
+        <div class="content" id="content">
+          <h2 id="loginTitle">User Login</h2>
+          <form id="loginForm" method="POST" action="login.php">
+            <div class="inputBox">
+              <input type="text" name="username" required>
+              <span id="usernameLabel">Username</span>
+            </div>
+            <div class="inputBox">
+              <input type="password" name="password" required>
+              <span>Password</span>
+            </div>
+            <div class="links" id="userLinks">
+              <a href="forgetpassword.html">Forgot Password?</a>
+              <a href="signup.php">Sign Up</a>
+            </div>
+            <br>
+            <input type="hidden" name="userType" id="userType" value="user"> <!-- Hidden field to track user type -->
+            <div class="inputBox">
+              <input type="submit" value="Login" id="submitButton">
+            </div>
+          </form>
+          <div class="links">
+            <!-- Separate buttons for User, Admin, and Company login -->
+            <button class="toggleButton" id="userBtn">User Login</button>
+            <button class="toggleButton" id="adminBtn">Admin Login</button>
+            <button class="toggleButton" id="companyBtn">Company Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const userBtn = document.getElementById('userBtn');
+    const adminBtn = document.getElementById('adminBtn');
+    const companyBtn = document.getElementById('companyBtn');
+    const loginTitle = document.getElementById('loginTitle');
+    const usernameLabel = document.getElementById('usernameLabel');
+    const userTypeField = document.getElementById('userType');
+    const submitButton = document.getElementById('submitButton');
+
+    userBtn.addEventListener('click', () => {
+      // Switch to User Login
+      loginTitle.textContent = 'User Login';
+      usernameLabel.textContent = 'Username';
+      userTypeField.value = 'user'; // Set user type back to user
+      submitButton.value = 'Login'; // Change button text
+    });
+
+    adminBtn.addEventListener('click', () => {
+      // Switch to Admin Login
+      loginTitle.textContent = 'Admin Login';
+      usernameLabel.textContent = 'Admin Username';
+      userTypeField.value = 'admin'; // Set user type to admin
+      submitButton.value = 'Admin Login'; // Change button text
+    });
+
+    companyBtn.addEventListener('click', () => {
+      // Switch to Company Login
+      loginTitle.textContent = 'Company Login';
+      usernameLabel.textContent = 'Company Username';
+      userTypeField.value = 'company'; // Set user type to company
+      submitButton.value = 'Company Login'; // Change button text
+    });
+  </script>
+</body>
+</html>

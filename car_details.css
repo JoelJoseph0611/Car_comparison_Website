@@ -1,0 +1,85 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1d1d1d; /* Dark background */
+}
+
+.car-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff; /* White background for the container */
+    padding: 20px;
+    border-radius: 15px; /* Slightly larger border radius */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    transition: box-shadow 0.3s, transform 0.3s; /* Added transform effect */
+}
+
+.car-details-container:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; /* Larger border radius */
+    margin-bottom: 15px;
+    border: 2px solid #4CAF50; /* Green border around the image */
+}
+
+h2 {
+    font-size: 30px; /* Slightly larger title font */
+    margin: 10px 0;
+    color: #2c3e50; /* Darker color for the title */
+}
+
+.car-price {
+    font-size: 24px; /* Larger price font */
+    color: #e74c3c; /* Red color for price */
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.car-specs {
+    list-style: none;
+    padding: 0;
+    border-top: 2px solid #4CAF50; /* Green border on top */
+    margin-top: 20px;
+}
+
+.car-specs li {
+    margin: 12px 0;
+    font-size: 18px; /* Slightly larger font for specs */
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(76, 175, 80, 0.1); /* Light green background */
+    border-radius: 5px;
+}
+
+.car-specs li:hover {
+    background: rgba(76, 175, 80, 0.2); /* Darker on hover */
+}
+
+.car-specs li strong {
+    color: #4CAF50; /* Green for spec labels */
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px; /* Slightly larger padding */
+    background-color: #2980b9; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px; /* Larger button font */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effects */
+}
+
+.back-button:hover {
+    background-color: #3498db; /* Lighter blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}

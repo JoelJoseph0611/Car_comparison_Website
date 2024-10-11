@@ -1,0 +1,421 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Compare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contact-title {
+    font-size: 2.5rem; /* Larger font size for emphasis */
+    font-weight: 700; /* Bold font */
+    text-align: center; /* Center align the title */
+    color: #333; /* Dark gray color for the text */
+    margin-bottom: 10px;
+    margin-top: 100px; /* Space below the title */
+    text-transform: uppercase; /* Uppercase for a modern touch */
+}
+
+.contact-description {
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #555; /* Lighter gray color for contrast */
+    text-align: center; /* Center align the description */
+    margin-bottom: 40px; /* Space below the description */
+    line-height: 1.5; /* Increased line height for readability */
+}
+
+    </style>
+
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <h1 class="logo">CarCompare</h1>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#compare-card">Compare Cars</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.php">Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li> -->
+                            <!-- <li class="nav-item">
+                                <form class="form-inline">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <video class="hero-video" autoplay muted loop>
+                    <source src="carback.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero-content">
+                    <h2>Find Your Perfect Car</h2>
+                    <p>Explore the road ahead with our exclusive Car List.</p>
+                    <a href="car_data.php" class="cta-button">Car List</a>
+                </div>
+            </div>
+        </section>
+        <section id="cars" class="car-list">
+
+               <!-- brand section -->
+
+            <h2>Choose Your Car Brand</h2>
+            <div class="brand-grid">
+                <!-- <a href="brand.php?name=maruti"><div>
+                    <img src="images/suzuki.png" alt="Maruti Suzuki">
+                    <p>Maruti Suzuki</p>
+                </div></a> -->
+            
+                <a href="brand.php?name=Tata"><div>
+                    <img src="images/tata.png" alt="Tata">
+                    <p>Tata</p>
+                </div></a>
+            
+                <a href="brand.php?name=Toyota"><div>
+                    <img src="images/toyota.png" alt="Toyota">
+                    <p>Toyota</p>
+                </div></a>
+            
+                <!-- <a href="brand.php?name=mahindra"><div>
+                    <img src="images/mahindra.png" alt="Mahindra">
+                    <p>Mahindra</p>
+                </div></a> -->
+            
+                <a href="brand.php?name=Hyundai"><div>
+                    <img src="images/hyundai.png" alt="Hyundai">
+                    <p>Hyundai</p>
+                </div></a>
+            
+                <a href="brand.php?name=BMW"><div>
+                    <img src="images/bmw.png" alt="BMW">
+                    <p>BMW</p>
+                </div></a>
+            
+                <a href="brand.php?name=Mercedes"><div>
+                    <img src="images/benz.png" alt="Mercedes-Benz">
+                    <p>Mercedes-Benz</p>
+                </div></a>
+            
+                <!-- <a href="brand.php?name=kia"><div>
+                    <img src="images/kia.png" alt="Kia">
+                    <p>Kia</p>
+                </div></a> -->
+            
+                <a href="brand.php?name=Audi"><div>
+                    <img src="images/audi.png" alt="Audi">
+                    <p>Audi</p>
+                </div></a>
+            
+                <!-- <a href="brand.php?name=skoda"><div>
+                    <img src="images/skoda.png" alt="SKODA">
+                    <p>SKODA</p>
+                </div></a> -->
+            
+                <!-- <a href="brand.php?name=mg"><div>
+                    <img src="images/mg.png" alt="MG">
+                    <p>MG</p>
+                </div></a> -->
+            
+                <a href="brand.php?name=Honda"><div>
+                    <img src="images/honda.png" alt="Honda">
+                    <p>Honda</p>
+                </div></a>
+            
+                <a href="brand.php?name=Volkswagen"><div>
+                    <img src="images/ww.png" alt="Volkswagen">
+                    <p>Volkswagen</p>
+                </div></a>
+            
+                <a href="brand.php?name=Nissan"><div>
+                    <img src="images/nissan.png" alt="Nissan">
+                    <p>Nissan</p>
+                </div></a>
+            
+                <a href="brand.php?name=Ford"><div>
+                    <img src="images/ford.png" alt="Ford">
+                    <p>Ford</p>
+                </div></a>
+            </div>
+            
+
+
+            <!-- trending cars -->
+
+            <h2>Trending Cars</h2>
+    
+    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="4000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/tatacurvv.png" class="card-img-top" alt="Car 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Tata Curvv</h5>
+                                <p class="card-text">Rs. 9.99 - 19.00 Lakh</p>
+                                <p>Avg. Ex-Showroom price</p>
+                                <!-- <a href="#" class="btn btn-beautiful">More Info</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/tharroxx.png" class="card-img-top" alt="Car 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Mahindra Thar Roxx</h5>
+                                <p class="card-text">Rs. 12.99 - 20.49 Lakh</p>
+                                <p>Avg. Ex-Showroom price</p>
+                                <!-- <a href="#" class="btn btn-beautiful">More Info</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/CitroenBasalt.png" class="card-img-top" alt="Car 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Citroen Basalt</h5>
+                                <p class="card-text">Rs. 7.99 - 13.83 Lakh</p>
+                                <p>Avg. Ex-Showroom price</p>
+                                <!-- <a href="#" class="btn btn-beautiful">More Info</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/MahindraXUV.png" class="card-img-top" alt="Car 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Mahindra XUV 3XO</h5>
+                                <p class="card-text">Rs. 7.49 - 15.49 Lakh</p>
+                                <p>Avg. Ex-Showroom price</p>
+                                <!-- <a href="#" class="btn btn-beautiful">More Info</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/MarutiFronx.png" class="card-img-top" alt="Car 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Maruti Fronx</h5>
+                                <p class="card-text">Rs. 7.52 - 13.04 Lakh</p>
+                                <p>Avg. Ex-Showroom price</p>
+                                <!-- <a href="#" class="btn btn-beautiful">More Info</a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="images/HyundaiExter.png" class="card-img-top" alt="Car 6">
+                            <div class="card-body">
+                                <h5 class="card-title">Hyundai Exter</h5>
+                                <p class="card-text">Rs. 6.13 - 10.43 Lakh</p>
+                                <p>Avg. Ex-Showroom price</p>   
+                                <!-- <a href="#" class="btn btn-beautiful">More Info</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more carousel-item blocks as needed -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+        
+        </section>
+    </main>
+
+<hr>
+
+
+    <!-- <div class="container">
+        <h2>Find The Cars Of Your Choice</h2>
+        <div class="filter-tabs">
+            <button class="tab active" data-target="budget">BUDGET</button>
+            <button class="tab" data-target="body-type">BODY TYPE</button>
+            <button class="tab" data-target="fuel-type">FUEL TYPE</button>
+            <button class="tab" data-target="transmission">TRANSMISSION</button>
+            <button class="tab" data-target="seating-capacity">SEATING CAPACITY</button>
+        </div>
+
+        <div class="filter-options active" id="budget">
+            <button class="filter-btn">Under 5 Lakh</button>
+            <button class="filter-btn">Under 6 Lakh</button>
+            <button class="filter-btn">Under 7 Lakh</button>
+            <button class="filter-btn">Under 8 Lakh</button>
+            <button class="filter-btn">Under 10 Lakh</button>
+            <button class="filter-btn">Under 15 Lakh</button>
+            <button class="filter-btn">Under 20 Lakh</button>
+            <button class="filter-btn">Under 25 Lakh</button>
+            <button class="filter-btn">Under 30 Lakh</button>
+            <button class="filter-btn">Luxury Cars</button>
+        </div>
+
+        <div class="filter-options" id="body-type">
+            <button class="filter-btn">SUV</button>
+            <button class="filter-btn">Sedan</button>
+            <button class="filter-btn">Hatchback</button>
+            <button class="filter-btn">Convertible</button>
+            <button class="filter-btn">Coupe</button>
+        </div>
+
+        <div class="filter-options" id="fuel-type">
+            <button class="filter-btn">Petrol</button>
+            <button class="filter-btn">Diesel</button>
+            <button class="filter-btn">Electric</button>
+            <button class="filter-btn">Hybrid</button>
+            <button class="filter-btn">CNG</button>
+        </div>
+
+        <div class="filter-options" id="transmission">
+            <button class="filter-btn">Manual</button>
+            <button class="filter-btn">Automatic</button>
+        </div>
+
+        <div class="filter-options" id="seating-capacity">
+            <button class="filter-btn">4 Seater</button>
+            <button class="filter-btn">5 Seater</button>
+            <button class="filter-btn">7 Seater</button>
+        </div>
+
+
+    </div> -->
+
+
+    
+
+
+    <div id="compare-card" class="compare-card" onclick="window.location.href='compare.html';">
+        <div class="compare-quote">
+            <h2>Find the Perfect Car for You!</h2>
+            <p>Compare cars and make the best choice for your next ride.</p>
+        </div>
+        <button class="compare-btn">Compare Cars</button>
+    </div>
+
+    
+
+    
+
+
+
+
+
+    
+
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script >
+        // JavaScript for handling tab functionality
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all tab elements
+    const tabs = document.querySelectorAll('.tab');
+    // Get all filter option containers
+    const filterOptions = document.querySelectorAll('.filter-options');
+
+    // Add click event listeners to each tab
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', function () {
+            // Remove active class from all tabs
+            tabs.forEach((tab) => tab.classList.remove('active'));
+            // Add active class to the clicked tab
+            this.classList.add('active');
+
+            // Hide all filter options initially
+            filterOptions.forEach((option) => option.classList.remove('active'));
+
+            // Show the filter options related to the clicked tab
+            const target = this.getAttribute('data-target');
+            document.getElementById(target).classList.add('active');
+        });
+    });
+});
+
+
+// Contact Us
+    document.addEventListener("DOMContentLoaded", function() {
+        const card = document.querySelector('.card');
+        card.style.opacity = 1; // Make it visible
+    });
+
+
+
+
+
+    document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            const templateParams = {
+                from_name: name,
+                from_email: email,
+                message: message
+            };
+
+            emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    alert('Thank you! Your message has been sent.');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Sorry, something went wrong. Please try again later.');
+                });
+        });
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind the content */
+}
+
+
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.car-selection {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.car-dropdown {
+    width: 45%;
+}
+
+/* Styling for the select element */
+select {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.3rem; /* Font size for readability */
+    color: #f7f2f2; /* Text color */
+    background-color: #6a6565; /* White background for contrast */
+    border: 2px solid #ddd; /* Light border for a clean look */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px; /* Padding for spacing inside the select */
+    appearance: none; /* Removes default dropdown arrow */
+    width: 100%; /* Full width to fit its container */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for border and shadow */
+}
+
+/* Add a custom arrow to the select element */
+select::-ms-expand {
+    display: none; /* Removes default arrow in IE */
+}
+
+select::after {
+    content: '▼'; /* Custom dropdown arrow */
+    font-size: 1rem;
+    color: #333;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; /* Prevents arrow from interfering with clicks */
+}
+
+/* Styling for the container to position the arrow */
+.select-container {
+    position: relative; /* Ensures arrow is positioned correctly */
+    display: inline-block; /* Shrinks the container to fit the select */
+}
+
+/* Hover and Focus Effects */
+select:hover,
+select:focus {
+    border-color: #29a745; /* Green border on hover/focus */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover/focus */
+    outline: none; /* Removes default focus outline */
+}
+
+
+.heading-compare-cars {
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem; /* Larger font size for emphasis */
+    font-weight: bold; /* Bold text */
+    color: #200a0a; /* White text color */
+    text-align: center; /* Center align the text */
+    margin: 50px 0; /* Spacing above and below */
+    padding: 15px; /* Padding for added space */
+    background: linear-gradient(135deg, #575857, #edefed); /* Gradient background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Shadow for text readability */
+    display: inline-block; /* Adjust to fit content */
+    max-width: 90%; /* Ensures heading doesn't stretch too wide */
+    word-wrap: break-word; /* Handle long words */
+    animation: bounceIn 1s ease-out; /* Bounce-in animation */
+}
+
+/* Animation Keyframes */
+@keyframes animateHeading {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-45deg);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1) rotate(10deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+
+/* Hover Effects */
+.heading-compare-cars:hover {
+    background: linear-gradient(135deg, #e0e4e1, #575857); /* Inverted gradient */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .heading-compare-cars {
+        font-size: 2.5rem; /* Adjust font size for smaller screens */
+        padding: 12px; /* Adjust padding for smaller screens */
+    }
+}
+
+
+.compare-button {
+    background: linear-gradient(135deg, #a3bc12, #05239c);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px auto;
+    display: block;
+    transition: all 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.compare-button:hover {
+    background: linear-gradient(135deg, #05239c, #a3bc12);
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+}
+
+.compare-button:active {
+    transform: translateY(0); 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+.comparison-table {
+    background: linear-gradient(135deg, #b8bac3, #533e3e);
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.table-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.car-name, .car-image {
+    flex-basis: 20%; 
+    text-align: center;
+}
+
+.change-car {
+    background-color: #007bff;
+    background-color: #533e3e;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.car-image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .table-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .table-row span, .car-name, .car-image {
+        width: 100%; 
+    }
+
+    .car-image {
+        width: 80px;
+    }
+}
+
+.label-car1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem; 
+    font-weight: 600; 
+    color: #ddd1d1; 
+    display: block;
+    margin-bottom: 8px; 
+    text-align: left; 
+    letter-spacing: 0.5px; 
+    transition: color 0.3s ease; 
+}
